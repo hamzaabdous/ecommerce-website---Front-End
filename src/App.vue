@@ -1,10 +1,8 @@
 <template>
   <v-app id="inspire">
-    <v-app-bar class="pa-3" max-height="90" color="white" flat>
-      <v-container class="py-0">
-        <v-spacer></v-spacer>
-
-        <v-responsive class="pt-10" max-width="600">
+    <v-app-bar class="pt-3" max-height="90" color="white" flat>
+      <v-container class="d-flex justify-center">
+          <v-responsive class="pt-6" max-width="750">
           <v-text-field
             height="30"
             rounded
@@ -15,12 +13,12 @@
             placeholder="hello"
           ></v-text-field>
         </v-responsive>
-        <v-spacer></v-spacer>
+        
       </v-container>
     </v-app-bar>
-    <v-container class="pt-8">
+    <div class="pt-0">
       <v-row>
-        <v-col cols="2">
+        <v-col class="pt-16 ml-5" cols="2">
           <v-sheet class="grey lighten-3 " rounded="lg">
             <v-list color="transparent">
               <v-avatar
@@ -48,16 +46,16 @@
 
         <v-col>
           <v-sheet
-            class="pa-6 grey lighten-3"
-            min-height="85vh"
-            width="66vw"
+            class="pa-6 grey lighten-3 "
+            min-height="80vh"
+            width="75vw"
             rounded="lg"
           >
             <router-view />
           </v-sheet>
         </v-col>
       </v-row>
-    </v-container>
+    </div>
   </v-app>
 </template>
 

@@ -1,17 +1,18 @@
 <template>
-  <div class="login">
+  <div class="login" >
     <v-container fluid >
-      <v-row>
-        <v-col cols="6" >
+      <v-row >
+        <v-col cols="6"  >
           <v-img
+          id="img"
+          class="mt-10"
             max-height="100%"
             max-width="100%"
-        
             src="../assets/Group 3897.png"
           ></v-img>
         </v-col>
         
-        <v-col align=center cols="6" class="blue lighten-3  ">
+        <v-col align=center cols="6" class="blue lighten-3 " >
            
              <div class="pt-16">
                 <v-img max-height="90%" max-width="20%"  src="../assets/Group.png" ></v-img>
@@ -36,6 +37,11 @@
     </v-container>
   </div>
 </template>
+<style scoped>
+#img{
+height: 90vh;
+}
+</style>
 <script>
 export default {
   name: "login",

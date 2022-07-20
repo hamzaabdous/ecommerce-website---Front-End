@@ -1,5 +1,5 @@
 <template>
-  <v-app id="inspire">
+  <v-app v-if="login==true" id="inspire">
     <v-app-bar class="pt-3" max-height="90" color="white" flat>
       <v-container class="d-flex justify-center">
           <v-responsive class="pt-6" max-width="750">
@@ -57,15 +57,25 @@
       </v-row>
     </div>
   </v-app>
+  
+    
+    <v-app v-else >
+    <Login />
+  </v-app>
+ 
 </template>
 
-<script>
+<script> 
+import Login from '../src/views/Login.vue'
 export default {
   name: "App",
-
+components:{
+Login,
+},
   data() {
     return {
-      drawer: false,
+      login: false,
+
     };
   },
 };

@@ -4,7 +4,7 @@
     <v-row  >
       <v-col  cols="6" v-for="product in products" :key="product.id">
     
-        <v-card elevation="5" outlined  min-height="100%" >
+        <v-card elevation="5" outlined  min-height="100%"  >
     
     
           <v-img  class="img" :src="product.image"></v-img>
@@ -15,7 +15,7 @@
           <v-chip color="green" >{{product.stock}}</v-chip>
           <v-card-text>{{product.price}} </v-card-text>
          
-           <v-action><v-icon>mdi-cart</v-icon></v-action> 
+           <v-action><v-icon>mdi-cart</v-icon><v-icon>mdi-cards-heart-outline</v-icon></v-action> 
           
           </div>
         </v-card>
@@ -28,8 +28,9 @@
 <style scoped>
 .img{
   float: left;
-  height:250px;
-  max-width: 220px;
+  height:270px;
+  width: 220px;
+  object-fit: cover;
 }
 .btn{
   outline: none;

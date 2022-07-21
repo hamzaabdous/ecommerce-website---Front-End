@@ -66,15 +66,17 @@
 </template>
 
 <script> 
-import Login from '../src/views/Login.vue'
+import Login from '../src/views/Login.vue';
+import HomeView from './views/HomeView.vue';
 export default {
   name: "App",
 components:{
 Login,
+HomeView,
 },
   data() {
     return {
-      login: false,
+      login: true,
 
     };
   },

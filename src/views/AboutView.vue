@@ -11,12 +11,14 @@
           <div class="text-center">
           <h3 class="pt-5">{{product.name}}</h3>
           <v-card-text>{{product.description}}</v-card-text>
-          <v-card-text>{{product.size}}</v-card-text>
-          <v-chip color="green" >{{product.stock}}</v-chip>
-          <v-card-text>{{product.price}} </v-card-text>
+          <v-card-tex>colors</v-card-tex>
+          <v-card-text>{{product.size}}</v-card-text><v-card-text>{{product.price}} </v-card-text>
+          
+          <div class="div">
+          <v-chip  id="chip" >{{product.stock}}</v-chip>
          
            <v-action><v-icon>mdi-cart</v-icon><v-icon>mdi-cards-heart-outline</v-icon></v-action> 
-          
+          </div>
           </div>
         </v-card>
          
@@ -35,6 +37,12 @@
 .btn{
   outline: none;
   background-color: red;
+}
+.div{
+  display: inline-block;
+}
+#chip{
+  background-color:blue;
 }
 </style>
 <script>
@@ -59,7 +67,6 @@ export default {
           image:"https://help.apple.com/assets/6062258EBFC7E7487E19DBB0/60622591BFC7E7487E19DBBA/fr_FR/540d7697864354f0c0bed1741209d7f1.png",
           description: "Apple M1 CHp 51 GB Running shoes ",
           stock: "available",
-          
           price: " 11900 $",
         },
         {

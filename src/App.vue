@@ -10,7 +10,9 @@
             elevation="20px"
             color="grey"
             background-color="white"
-            placeholder="hello"
+            placeholder="search"
+            append-icon="mdi-currency-eth"
+            
           ></v-text-field>
         </v-responsive>
         

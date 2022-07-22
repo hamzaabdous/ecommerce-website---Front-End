@@ -1,6 +1,8 @@
 <template>
   <div class="login">
-    <v-container fluid>
+    <v-container align-center fluid>
+      <v-layout fill-height>
+        <v-flex xs12>
       <v-row>
         <v-col cols="6">
           <v-img
@@ -27,6 +29,7 @@
               prepend-inner-icon="mdi-account"
               background-color="white"
               outlined
+              class="shrink mx-4 "
             ></v-text-field
           ></v-col>
           <v-col cols="12" sm="7" md="20">
@@ -35,16 +38,19 @@
               prepend-inner-icon="mdi-lock-outline"
               background-color="white"
               outlined
+               class="shrink mx-4"
             ></v-text-field>
           </v-col>
 
           <v-col>
-            <v-btn class="text-center px-16" elevation="3">Login</v-btn>
-            <p class="text-right mt-5">Forgot Password ?</p>
+            <v-btn class="text-center px-16 shrink mx-4" elevation="3">Login</v-btn>
+            <p class="text-right mt-5 shrink mx-4">Forgot Password ?</p>
           </v-col>
           
         </v-col>
       </v-row>
+      </v-flex>
+      </v-layout>
     </v-container>
   </div>
 </template>

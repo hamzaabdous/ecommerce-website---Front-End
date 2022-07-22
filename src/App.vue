@@ -78,7 +78,7 @@ HomeView,
 },
   data() {
     return {
-      login: true,
+      login: false,
 
     };
   },

@@ -62,23 +62,28 @@
   
     
     <v-app v-else >
-    <Login />
+    <SignUp />    
   </v-app>
+  
  
 </template>
 
 <script> 
-import Login from '../src/views/Login.vue';
-import HomeView from './views/HomeView.vue';
+import Login from './views/Login.vue';
+import AboutView from './views/HomeView.vue';
+import SignUp from './views/Signup.vue';
+
 export default {
   name: "App",
 components:{
 Login,
-HomeView,
+AboutView,
+SignUp,
 },
   data() {
     return {
       login: false,
+      
 
     };
   },

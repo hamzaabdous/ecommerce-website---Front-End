@@ -6,8 +6,8 @@
       <v-col cols="6" v-for="product in products" :key="product.id">
         <v-card elevation="5" outlined min-height="100%">
           <v-row>
-            <v-col cols="6">
-              <v-img
+            <v-col cols="6" >
+              <v-img 
                 class="img"
                 width="200"
                 height="200"
@@ -56,6 +56,9 @@
 <style scoped>
 .div {
   display: inline-block;
+}
+.img{
+  color: white !important;
 }
 </style>
 <script>

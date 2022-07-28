@@ -37,7 +37,7 @@
 
               <v-list-item link color="grey lighten-4">
                 <v-list-item-content>
-                  <v-list-item-title> Refresh </v-list-item-title>
+                  <v-list-item-title class="bg-red-800"> Refresh </v-list-item-title>
                 </v-list-item-content>
               </v-list-item>
             </v-list>

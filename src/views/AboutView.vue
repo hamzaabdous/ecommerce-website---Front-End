@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div class="about">
     <h2>Trending Items</h2>
     <v-container align-center fluid>
@@ -51,6 +52,11 @@
       </v-col>
     </v-row>
     </v-container>
+=======
+  <div class="about ">
+    <h1 class="bg-red-800">This isvdv an about page</h1>
+    <router-link to="/home">home</router-link>
+>>>>>>> 959ceb9eb159be1ddd90fa20b3293d799ecdd0f1
   </div>
 </template>
 <style scoped>

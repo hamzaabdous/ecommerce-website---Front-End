@@ -1,3 +1,4 @@
+<h3  class="bg-black p-56">HI rah tailwind CSS 5dama</h3>
 <template>
   <v-container>
     <v-row class="text-center">
@@ -11,7 +12,7 @@
       </v-col>
 
       <v-col class="mb-4">
-        <h1 class="display-2 font-weight-bold mb-3">
+        <h1 class="display-2 font-weight-bold mb-3 bg-slate-800">
           Welcome to Vuetify
         </h1>
 

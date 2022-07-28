@@ -1,11 +1,6 @@
 module.exports = {
-  variants: {
-    extend: {
-      opacity: ['disabled'],
-      cursor: ['disabled'],
-    },
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-  ],
-};
+}
